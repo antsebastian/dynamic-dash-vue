@@ -1,0 +1,134 @@
+{
+  "panels": [
+    {
+      "title": "Panel 1",
+      "icon": "mdi-information-outline",
+      "widget": {
+        "name": "Widget2"
+      },
+      "position": {
+        "col": "1",
+        "row": "1",
+        "colSpan": "3",
+        "rowSpan": "1"
+      }
+    },
+    {
+      "title": "Panel 2",
+      "icon": "mdi-information-outline",
+      "widget": {
+        "name": "Widget2"
+      },
+      "position": {
+        "col": "4",
+        "row": "1",
+        "colSpan": "3",
+        "rowSpan": "1"
+      }
+    },
+    {
+      "title": "Panel 3",
+      "icon": "mdi-information-outline",
+      "widget": {
+        "name": "Widget2"
+      },
+      "position": {
+        "col": "7",
+        "row": "1",
+        "colSpan": "3",
+        "rowSpan": "1"
+      }
+    },
+    {
+      "title": "Panel 4",
+      "icon": "mdi-information-outline",
+      "widget": {
+        "name": "Widget2"
+      },
+      "position": {
+        "col": "10",
+        "row": "1",
+        "colSpan": "3",
+        "rowSpan": "1"
+      }
+    },
+    {
+      "title": "Timeline",
+      "icon": "mdi-clock-outline",
+      "widget": {
+        "name": "Widget1"
+      },
+      "position": {
+        "col": "1",
+        "row": "2",
+        "colSpan": "6",
+        "rowSpan": "2"
+      }
+    },
+    {
+      "title": "Panel 6",
+      "icon": "mdi-information-outline",
+      "widget": {
+        "name": "Widget2"
+      },
+      "position": {
+        "col": "7",
+        "row": "2",
+        "colSpan": "6",
+        "rowSpan": "1"
+      }
+    },
+    {
+      "title": "Panel 7",
+      "icon": "mdi-information-outline",
+      "widget": {
+        "name": "Widget2"
+      },
+      "position": {
+        "col": "7",
+        "row": "3",
+        "colSpan": "6",
+        "rowSpan": "1"
+      }
+    },
+    {
+      "title": "Panel 8",
+      "icon": "mdi-information-outline",
+      "widget": {
+        "name": "Widget2"
+      },
+      "position": {
+        "col": "1",
+        "row": "4",
+        "colSpan": "4",
+        "rowSpan": "1"
+      }
+    },
+    {
+      "title": "Panel 9",
+      "icon": "mdi-information-outline",
+      "widget": {
+        "name": "Widget2"
+      },
+      "position": {
+        "col": "5",
+        "row": "4",
+        "colSpan": "4",
+        "rowSpan": "1"
+      }
+    },
+    {
+      "title": "Panel 10",
+      "icon": "mdi-information-outline",
+      "widget": {
+        "name": "Widget2"
+      },
+      "position": {
+        "col": "9",
+        "row": "4",
+        "colSpan": "4",
+        "rowSpan": "1"
+      }
+    }
+  ]
+}
