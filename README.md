@@ -22,11 +22,12 @@ When the panel mounts, it loads the widget using webpack's dynamic import, it th
       ).default;
 
 ```
-##Layout Alg
+## Layout Alg
 Dashboard loops through the panels collection defined in [dashboard.json](./src/assets/mock-data/dashboard.json)
- and adds each [Panel.Vue](./src/components/lib/Panel.vue) component to the main css grid and then binds the grid properties. 
+ and adds each [Panel.Vue](./src/components/lib/Panel.vue) component to its 12 column css grid and then binds the grid properties including row,col and respective spans. 
 
 [see Dashboard.Vue](./src/components/lib/Dashboard.vue)
+![alt text](./src/assets/grid.png)
 
 ## Dependency injection
 Dashboard uses Vue's dependency injection (new feature Vue.js 3.x) to facilitate scoped communication between the panel and widget components. 
