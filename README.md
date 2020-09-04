@@ -1,15 +1,13 @@
 # Dynamic Dashboard Vue
 
-A Vue component that loads and positions panels based on json data and dynamically loads a widget into each panel.
+A Vue component case study that loads and positions panels based on json data and dynamically loads a widget into each panel.
+
 ![alt text](./src/assets/loaded.png)
 
+
 ## Dynamically Loading the Widget
-
-The panel binds its widget property to the 'is' property of Vue's component tag. 
-When the panel mounts, it loads the widget using webpack's dynamic import, it then sets the widget property to the loaded widget component.
-
-
-[see Panel.Vue](./src/components/lib/Panel.vue)
+Internally, Panel.vue binds its widget property to the 'is' property of Vue's component tag. 
+When the panel mounts, it loads the widget using webpack's dynamic import, the panel then sets its widget property to the loaded widget component.
 ```        
     // binding to the component tag
     <component :style="showSkeletor ? {display: 'none'} : {display: 'block'}" v-bind:is="widget"></component>
@@ -22,18 +20,21 @@ When the panel mounts, it loads the widget using webpack's dynamic import, it th
       ).default;
 
 ```
+[see Panel.Vue](./src/components/lib/Panel.vue)
+
+
 ## Layout Alg
-Dashboard loops through the panels collection defined in [dashboard.json](./src/assets/mock-data/dashboard.json)
+[Dashboard.Vue](./src/components/lib/Dashboard.vue) loops through the panels collection defined in [dashboard.json](./src/assets/mock-data/dashboard.json)
  and adds each [Panel.Vue](./src/components/lib/Panel.vue) component to its 12 column css grid and then binds the grid properties including row,col and respective spans. 
 
-[see Dashboard.Vue](./src/components/lib/Dashboard.vue)
 ![alt text](./src/assets/grid.png)
 
+
 ## Dependency injection
-Dashboard uses Vue's dependency injection (new feature Vue.js 3.x) to facilitate scoped communication between the panel and widget components. 
+Dashboard.vue uses Vue's dependency injection (new feature Vue.js 3.x) to facilitate scoped communication between the panel and widget components. 
 
-##UX - Skeleton and...TBD  
-
+##UX - Dashboard Loading VS Panel Loading  
+TBD
 ![alt text](./src/assets/loading-skeletons.png)
 
 ![alt text](./src/assets/user-panel-refresh.png)
