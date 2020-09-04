@@ -1,6 +1,6 @@
 # Dynamic Dashboard Vue
 
-A Vue.js component case study that loads and positions panels based on json data and dynamically loads a widget into each panel.
+A Vue.js component case study.  Dynamic Dashboard loads and positions panels based on json data. It also loads a user defined widget into each panel.
 
 ![alt text](./src/assets/loaded.png)
 
@@ -33,7 +33,7 @@ When the panel mounts, it loads the widget using webpack's dynamic import. The p
 ## Dependency injection
 Dashboard.vue uses Vue's dependency injection (new feature Vue.js 3.x) to facilitate scoped communication between the panel and widget components. 
 
-##UX - Dashboard Loading VS Panel Loading  
+## UX - Dashboard Loading VS Panel Loading  
 TBD
 ![alt text](./src/assets/loading-skeletons.png)
 
