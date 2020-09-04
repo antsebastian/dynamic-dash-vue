@@ -1,6 +1,6 @@
 # Dynamic Dashboard Vue
 
-A Vue.js component case study.  Dynamic Dashboard loads and positions panels based on json data. It also loads a user defined widget into each panel.
+A Vue.js 3.x component case study.  Dynamic Dashboard loads and positions panels based on json data. It also loads a user defined widget into each panel.
 
 ![alt text](./src/assets/loaded.png)
 
