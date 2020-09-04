@@ -1,13 +1,14 @@
 # Dynamic Dashboard Vue
 
-A Vue component case study that loads and positions panels based on json data and dynamically loads a widget into each panel.
+A Vue.js component case study that loads and positions panels based on json data and dynamically loads a widget into each panel.
 
 ![alt text](./src/assets/loaded.png)
 
 
 ## Dynamically Loading the Widget
-Internally, Panel.vue binds its widget property to the 'is' property of Vue's component tag. 
-When the panel mounts, it loads the widget using webpack's dynamic import, the panel then sets its widget property to the loaded widget component.
+Internally, [Panel.vue](./src/components/lib/Panel.vue)
+ binds its widget property to the 'is' property of Vue's component tag. 
+When the panel mounts, it loads the widget using webpack's dynamic import. The panel then sets its widget property to the loaded widget component.
 ```        
     // binding to the component tag
     <component :style="showSkeletor ? {display: 'none'} : {display: 'block'}" v-bind:is="widget"></component>
@@ -20,7 +21,6 @@ When the panel mounts, it loads the widget using webpack's dynamic import, the p
       ).default;
 
 ```
-[see Panel.Vue](./src/components/lib/Panel.vue)
 
 
 ## Layout Alg
